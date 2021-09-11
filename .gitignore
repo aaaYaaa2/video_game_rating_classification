@@ -2,3 +2,5 @@ Video_Game_Rating.ipynb
 .ipynb_checkpoints
 ./src/__pycache__
 .DS_Store
+.UI/video-game-rating-pred/venv
+

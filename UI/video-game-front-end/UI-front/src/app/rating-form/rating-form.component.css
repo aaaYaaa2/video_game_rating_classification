@@ -1,0 +1,12 @@
+.container {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 150px;
+    width: 500px;
+    margin: auto;
+
+}
+
+.item {
+    order: 3;
+}

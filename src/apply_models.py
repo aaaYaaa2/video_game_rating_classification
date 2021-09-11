@@ -13,6 +13,7 @@ from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.linear_model import RidgeClassifier 
 from sklearn.neighbors import KNeighborsClassifier
 from transform_rates import TransformRates
+import joblib
 
 class ApplyModel:
     def __init__(self):
@@ -68,6 +69,8 @@ class ApplyModel:
         new_classifier = self.model_name_to_classifier[model_name]()
         new_classifier.fit(X_train[:, feature_cols], y_train)
         y_train_pred = new_classifier.predict(X_train[:, feature_cols])
+        filename = '' + model_name + '_model.joblib'
+        joblib.dump(new_classifier, filename)
         y_test_pred = new_classifier.predict(X_test[:, feature_cols])
         training_accuracy = acc(y_train, y_train_pred)
         testing_accuracy = acc(y_test, y_test_pred)

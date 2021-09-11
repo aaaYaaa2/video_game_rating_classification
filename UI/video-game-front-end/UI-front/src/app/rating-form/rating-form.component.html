@@ -1,0 +1,107 @@
+<div>
+<form [formGroup]="ratingForm" class="container">
+    <p>Please check the features of game you want to rate: </p>
+<div class="item">
+<label for="console">Game Console: </label>
+<input id="console" type="checkbox" value="console" name="console" formControlName="console">
+</div>
+
+<div class="item">
+<label for="alcohol_reference">Alcohol Reference: </label>
+<input id="alcohol_reference" type="checkbox" value="alcohol_reference" name="alcohol_reference" formControlName="alcoholReference">
+</div>
+
+<div class="item">
+<label for="animated_blood">Animated Blood: </label>
+<input id="animated_blood" type="checkbox" value="animated_blood" name="animated_blood" formControlName="animatedBlood">
+</div>
+
+<div class="item">
+<label for="blood">Blood: </label>
+<input id="blood" type="checkbox" value="blood" name="blood" formControlName="blood">
+</div>
+
+<div class="item">
+<label for="blood_and_gore">Blood and Gore: </label>
+<input id="blood_and_gore" type="checkbox" value="blood_and_gore" name="blood_and_gore" formControlName="bloodAndGore">
+</div>
+
+<div class="item">
+<label for="cartoon_violence">Cartoon Violence: </label>
+<input id="cartoon_violence" type="checkbox" value="cartoon_violence" name="cartoon_violence" formControlName="cartoonViolence">
+</div>
+
+<div class="item">
+<label for="drug_reference">Drug Reference: </label>
+<input id="drug_reference" type="checkbox" value="drug_reference" name="drug_reference" formControlName="drugReference">
+</div>
+
+<div class="item">
+<label for="fantasy_violence">Fantasy Violence: </label>
+<input id="fantasy_violence" type="checkbox" value="fantasy_violence" name="fantasy_violence" formControlName="fantasyViolence">
+</div>
+
+<div class="item">
+<label for="intense_violence">Intense Violence: </label>
+<input id="intense_violence" type="checkbox" value="intense_violence" name="intense_violence" formControlName="intenseViolence">
+</div>
+
+<div class="item">
+<label for="mature_humor">Mature Humor: </label>
+<input id="mature_humor" type="checkbox" value="mature_humor" name="mature_humor" formControlName="matureHumor">
+</div>
+
+<div class="item">
+<label for="mild_fantasy_violence">Mild Fantasy Violence: </label>
+<input id="mild_fantasy_violence" type="checkbox" value="mild_fantasy_violence" name="mildFantasy_violence" formControlName="mildFantasyViolence">
+</div>
+
+<div class="item">
+<label for="mild_lyrics">Mild Lyrics: </label>
+<input id="mild_lyrics" type="checkbox" value="mild_lyrics" name="mild_lyrics" formControlName="mildLyrics">
+</div>
+
+<div class="item">
+<label for="mild_suggestive_theme">Mild Suggestive Themes: </label>
+<input id="mild_suggestive_theme" type="checkbox" value="mild_suggestive_theme" name="mild_suggestive_themes" formControlName="mildSuggestiveThemes">
+</div>
+
+<div class="item">
+<label for="sexual_content">Sexual Content: </label>
+<input id="sexual_content" type="checkbox" value="sexual_content" name="sexual_content" formControlName="sexualContent">
+</div>
+
+<div class="item">
+<label for="sexual_themes">Sexual Themes: </label>
+<input id="sexual_themes" type="checkbox" value="sexual_themes" name="sexual_themes" formControlName="sexualThemes">
+</div>
+
+<div class="item">
+<label for="simulated_gambling">Simulated Gambling: </label>
+<input id="simulated_gambling" type="checkbox" value="simulated_gambling" name="simulated_gambling" formControlName="simulatedGambling">
+</div>
+
+<div class="item">
+<label for="strong_janguage">Strong Janguage: </label>
+<input id="strong_janguage" type="checkbox" value="strong_janguage" name="strong_janguage" formControlName="strongJanguage">
+</div>
+
+<div class="item">
+<label for="strong_sexual_content">Strong Sexual Content: </label>
+<input id="strong_sexual_content" type="checkbox" value="strong_sexual_content" name="strong_sexual_content" formControlName="strongSexualContent">
+</div>
+
+<div class="item">
+<label for="suggestive_themes">Suggestive Themes: </label>
+<input id="suggestive_themes" type="checkbox" value="suggestive_themes" name="suggestive_themes" formControlName="suggestiveThemes">
+</div>
+
+<div class="item">
+<label for="use_of_drugs_and_alcohol">Use of Drug and Alcohol: </label>
+<input id="use_of_drugs_and_alcohol" type="checkbox" value="use_of_drugs_and_alcohol" name="use_of_drugs_and_alcohol" formControlName="useOfDrugsAndAlcohol">
+</div>
+<button (click)="submitForm()">Submit</button>
+<p>The Game Rating is<input id="pred_result" type="text" value="unknown" name="pred_result" formControlName="predResult"></p>
+</form>
+</div>
+

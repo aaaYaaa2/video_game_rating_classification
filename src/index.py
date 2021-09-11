@@ -49,3 +49,7 @@ class ClassifyVideoGameRating:
         apply_model = ApplyModel()
         
         return apply_model.apply_model(name, X_train, X_test, y_train, y_test)
+
+
+model = ClassifyVideoGameRating()
+model.apply_model_by_name('DECISION_TREES', model.video_game_dataset)
